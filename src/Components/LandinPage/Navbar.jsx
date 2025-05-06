@@ -4,8 +4,9 @@ import { CiSearch } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from 'framer-motion';
-import Animationview from '../../lib/AnimationCard'
+import Animationview from '../../lib/AnimationCard';
 import { Link } from 'react-router-dom';
+
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -19,19 +20,20 @@ function Navbar() {
     );
 
     return (
-        <div className="w-full px-4 py-3 bg-white border-b-2">
+        <div className="w-full px-4 py-3 bg-white border-b-2 relative">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between h-16">
 
                 {/* Left: Logo */}
                 <div className="flex-shrink-0">
                     <img src={Logo} alt="Logo" className="h-32 w-36 object-contain " />
                 </div>
+
                 {/* Center Nav - Hidden on mobile */}
                 <Animationview>
                     <div className="hidden md:flex">
                         <ul className="flex gap-6 items-center">
-                            <Link to='/'> <NavItem label="Home" /> </Link>
-                            <Link to='/aboutus' >  <NavItem label="About" /></Link>
+                            <Link to='/'><NavItem label="Home" /></Link>
+                            <Link to='/aboutus'><NavItem label="About" /></Link>
                             <NavItem label="Blog" />
                             <Link to="/contactus"><NavItem label="Contact" /></Link>
                         </ul>
@@ -54,22 +56,22 @@ function Navbar() {
                 </Animationview>
             </div>
 
-            {/* Mobile Menu */}
+            {/* Mobile Menu - Slide from Left */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: 'auto', opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="md:hidden overflow-hidden"
+                        initial={{ x: '-100%', opacity: 0 }}
+                        animate={{ x: 0, opacity: 1 }}
+                        exit={{ x: '-100%', opacity: 0 }}
+                        transition={{ duration: 0.4 }}
+                        className="md:hidden fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg z-50 p-6"
                     >
-                        <ul className="flex flex-col items-center gap-4 bg-white rounded-lg p-4">
-                            <NavItem label="Home" onClick={() => setIsOpen(false)} />
-                            <NavItem label="About" onClick={() => setIsOpen(false)} />
+                        <ul className="flex flex-col gap-6 mt-16">
+                            <Link to='/'><NavItem label="Home" onClick={() => setIsOpen(false)} /></Link>
+                            <Link to='/aboutus'><NavItem label="About" onClick={() => setIsOpen(false)} /></Link>
                             <NavItem label="Blog" onClick={() => setIsOpen(false)} />
-                            <NavItem label="Contact" onClick={() => setIsOpen(false)} />
-                            <div className="flex items-center gap-2 mt-2">
+                            <Link to='/contactus'><NavItem label="Contact" onClick={() => setIsOpen(false)} /></Link>
+                            <div className="flex items-center gap-2 mt-4">
                                 <CiSearch size={20} />
                                 <h1 className="underline cursor-pointer">Search</h1>
                             </div>
