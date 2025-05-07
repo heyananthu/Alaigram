@@ -16,14 +16,14 @@ function Section2() {
                             </div>
                         </div>
                         <div>
-                            <img class="object-cover w-full h-90 md:h-80 rounded shadow-lg sm:h-100" src="https://img.freepik.com/premium-photo/spices-herbs-ayurvedic-medicine_915071-73227.jpg"
+                            <img class="object-cover w-full h-90 md:h-80 rounded shadow-lg sm:h-100" src="https://t3.ftcdn.net/jpg/10/82/53/50/360_F_1082535075_jSNDcpDWYOBfA8DD4o9nVF27T8zH7feY.jpg"
                                 alt="" />
                         </div>
 
                         <div class="flex flex-col justify-center">
                             <div class="max-w-xl mb-6">
                                 <img class="object-cover w-85 h-85 md:h-80 w-full rounded shadow-lg sm:h-96"
-                                    src="https://www.bonza.dog/wp-content/uploads/Ayurveda-for-Dogs-Are-There-Benefits-to-Ayurvedic-Medcine-1024x585.webp" alt="" />
+                                    src="https://itseeze.com/_webedit/cached-images/3214-0-792-1736-8416-6312-1132.png" alt="" />
                             </div>
                         </div>
 
@@ -51,14 +51,14 @@ function Section2() {
                             </div>
                         </div>
                         <div>
-                            <img class="object-cover w-full h-90 md:h-80 rounded shadow-lg sm:h-100" src="https://t3.ftcdn.net/jpg/02/10/73/18/360_F_210731877_SgcK5KVk6Hk7AKDkGHhsHdmfGTw6WaYp.jpg"
+                            <img class="object-cover w-full h-90 md:h-80 rounded shadow-lg sm:h-100" src="https://community.nasscom.in/sites/default/files/styles/960_x_600/public/media/images/AI-Ecommerce-Trends.png?itok=l5KVZ_fo"
                                 alt="" />
                         </div>
 
                         <div class="flex flex-col justify-center">
                             <div class="max-w-xl mb-6">
                                 <img class="object-cover w-85 h-85 md:h-80 w-full rounded shadow-lg sm:h-96"
-                                    src="https://t3.ftcdn.net/jpg/02/10/73/18/360_F_210731877_SgcK5KVk6Hk7AKDkGHhsHdmfGTw6WaYp.jpg" alt="" />
+                                    src="https://capturly.com/blog/wp-content/uploads/2018/01/eCommerce-website-search-customer-experience.jpg" alt="" />
                             </div>
                         </div>
 
@@ -85,7 +85,7 @@ function Section2() {
                             </div>
                         </div>
                         <div>
-                            <img class="object-cover w-full h-90 md:h-80 rounded shadow-lg sm:h-100" src="https://static.vecteezy.com/system/resources/previews/035/978/183/non_2x/ai-generated-indian-ayurveda-herbal-medicine-free-photo.jpg"
+                            <img class="object-cover w-full h-90 md:h-80 rounded shadow-lg sm:h-100" src="https://briansolis.com/wp-content/uploads/2022/01/eCommerce-Website-Components-photo.jpg"
                                 alt="" />
                         </div>
 

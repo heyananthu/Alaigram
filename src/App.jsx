@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Landingpage from './pages/Landingpage'
 import AboutPage from './pages/AboutPage'
 import Contactus from './pages/Contactus'
+import WhatsappChat from './pages/WhatsappChat'
 function App() {
   return (
     <BrowserRouter>
@@ -12,6 +13,7 @@ function App() {
           <Route path='/aboutus' element={<AboutPage />} />
           <Route path='/contactus' element={<Contactus />} />
         </Routes>
+        <WhatsappChat />
       </div>
     </BrowserRouter>
   )

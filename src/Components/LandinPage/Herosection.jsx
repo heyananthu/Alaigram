@@ -6,10 +6,10 @@ function Herosection() {
     return (
         <div>
             <div
-                className="hero h-[34rem]"
+                className="hero h-[32rem]"
                 style={{
                     backgroundImage:
-                        "url(https://static.vecteezy.com/system/resources/thumbnails/052/247/285/small_2x/a-round-of-green-leaves-and-bamboo-bowls-on-a-dark-background-photo.jpeg)",
+                        "url(https://img.freepik.com/premium-photo/composition-with-smartphone-used-digital-shopping-online-ordering_23-2151380469.jpg?semt=ais_hybrid&w=740)",
                 }}
             >
                 <div className="hero-overlay"></div>

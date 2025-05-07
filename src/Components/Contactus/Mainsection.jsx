@@ -1,6 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Address from '../../assets/address.jpeg'
 function Mainsection() {
+    const [name, setName] = useState()
+    const [email, setEmail] = useState()
+    const [message, setMessage] = useState()
+
+    const onSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+
+        formData.append("access_key", "f87ed089-97ea-4b2d-9a7e-e53973dd44fd");
+
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: json
+        }).then((res) => res.json());
+
+        if (res.success) {
+            console.log("Success", res);
+            alert("Success.....")
+        }
+    };
     return (
         <div>
             <section className=" py-16 px-4 sm:px-6 lg:px-8">
@@ -29,7 +56,7 @@ function Mainsection() {
                     </div>
 
                     {/* Contact Form */}
-                    <form className="space-y-6">
+                    <form className="space-y-6" onSubmit={onSubmit}>
                         <div>
                             <label className="block text-sm font-medium text-gray-700">Name</label>
                             <input
@@ -37,6 +64,10 @@ function Mainsection() {
                                 required
                                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Your Name"
+                                name='name'
+                                value={name}
+                                onChange={(e) => { setName(e.target.value) }}
+
                             />
                         </div>
                         <div>
@@ -46,6 +77,9 @@ function Mainsection() {
                                 required
                                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="you@example.com"
+                                name="email"
+                                value={email}
+                                onChange={(e) => { setEmail(e.target.value) }}
                             />
                         </div>
                         <div>
@@ -55,11 +89,15 @@ function Mainsection() {
                                 required
                                 className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Write your message..."
+                                name='message'
+                                value={message}
+                                onChange={(e) => { setMessage(e.target.value) }}
                             ></textarea>
                         </div>
                         <button
                             type="submit"
                             className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-2 px-4 rounded-md transition duration-200"
+
                         >
                             Send Message
                         </button>
