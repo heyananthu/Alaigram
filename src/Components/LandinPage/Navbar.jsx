@@ -34,7 +34,7 @@ function Navbar() {
                         <ul className="flex gap-6 items-center">
                             <Link to='/'><NavItem label="Home" /></Link>
                             <Link to='/aboutus'><NavItem label="About" /></Link>
-                            <NavItem label="Blog" />
+                            {/* <NavItem label="Blog" /> */}
                             <Link to="/contactus"><NavItem label="Contact" /></Link>
                         </ul>
                     </div>
@@ -69,7 +69,7 @@ function Navbar() {
                         <ul className="flex flex-col gap-6 mt-16">
                             <Link to='/'><NavItem label="Home" onClick={() => setIsOpen(false)} /></Link>
                             <Link to='/aboutus'><NavItem label="About" onClick={() => setIsOpen(false)} /></Link>
-                            <NavItem label="Blog" onClick={() => setIsOpen(false)} />
+                            {/* <NavItem label="Blog" onClick={() => setIsOpen(false)} /> */}
                             <Link to='/contactus'><NavItem label="Contact" onClick={() => setIsOpen(false)} /></Link>
                             <div className="flex items-center gap-2 mt-4">
                                 <CiSearch size={20} />
