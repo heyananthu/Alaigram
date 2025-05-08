@@ -11,12 +11,14 @@ import ProductCategories from '../Components/LandinPage/ProductCategories'
 import ValuePropositions from '../Components/LandinPage/ValuePropositions'
 import StrategicGoals from '../Components/LandinPage/StrategicGoals'
 import CallToAction from '../Components/LandinPage/CallToAction'
+import MissionSection from '../Components/LandinPage/MissionSection'
 function Landingpage() {
     return (
         <div className='bg-white h-full font-poppins'>
             <Navbar />
             <Herosection />
             <About />
+            {/* <MissionSection /> */}
             <CatagorySection />
 
             {/* <BusinessActivities /> */}

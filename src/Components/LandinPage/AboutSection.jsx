@@ -1,5 +1,6 @@
 import React from 'react';
 import Pottery from '../../assets/poettry.jpg'
+import Animation from '../../lib/FadeInWhenVisible'
 function AboutSection() {
     return (
         <section className="bg-[#f1f2e9] py-20 px-4 md:px-20">
@@ -22,13 +23,15 @@ function AboutSection() {
                 </div>
 
                 {/* Right Image Section */}
-                <div className="flex justify-center">
-                    <img
-                        src={Pottery} // Make sure to place your image in the right directory
-                        alt="Pottery Hand"
-                        className="rounded-lg  max-h-[600px] object-cover"
-                    />
-                </div>
+                <Animation>
+                    <div className="flex justify-center">
+                        <img
+                            src={Pottery} // Make sure to place your image in the right directory
+                            alt="Pottery Hand"
+                            className="rounded-lg  max-h-[600px] object-cover"
+                        />
+                    </div>
+                </Animation>
             </div>
         </section>
     );
