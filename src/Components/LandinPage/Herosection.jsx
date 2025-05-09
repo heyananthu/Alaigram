@@ -23,7 +23,7 @@ function Herosection() {
                                 Empowering rural India by connecting artisans to the global market through sustainable and ethical eCommerce solutions.
                             </p>
                             <div className="flex justify-center gap-4">
-                                <button className="md:px-6 md:py-3 px-2 bg-blue-600 hover:bg-blue-700 transition rounded-md font-medium">
+                                <button className="md:px-6 md:py-2 px-2 bg-gradient-to-r from-blue-700 to-blue-400 hover:bg-blue-700 transition rounded-md font-medium">
                                     Shop Now
                                 </button>
                                 <button className="px-6 py-3 bg-transparent border border-white hover:bg-white hover:text-black transition rounded-md font-medium">

@@ -19,7 +19,7 @@ function Landingpage() {
             <Herosection />
             <About />
             {/* <MissionSection /> */}
-            <CatagorySection />
+            {/* <CatagorySection /> */}
 
             {/* <BusinessActivities /> */}
             <ProductCategories />

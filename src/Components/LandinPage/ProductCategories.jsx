@@ -21,10 +21,10 @@ const categories = [
         title: "Traditional Arts & Crafts",
         image: "https://indian.handicrafts.gov.in/files/scheme_file/g18.jpg"
     },
-    {
-        title: "Eco-Friendly Packaging",
-        image: "https://www.artworkabode.com/blog/wp-content/uploads/2023/09/MicrosoftTeams-image-43.jpg"
-    },
+    // {
+    //     title: "Eco-Friendly Packaging",
+    //     image: "https://www.artworkabode.com/blog/wp-content/uploads/2023/09/MicrosoftTeams-image-43.jpg"
+    // },
     {
         title: "Home Décor",
         image: "https://www.latestbuy.com.au/cdn/shop/files/candles_fa74f788-2748-4d66-9c01-4c841ae398fa.png?v=1725625932&width=1000"
@@ -65,7 +65,7 @@ function ProductCategories() {
                             className="h-48 w-full object-cover"
                         />
                         <div className="p-4 text-center">
-                            <h3 className="text-xl font-semibold text-blue-700">{cat.title}</h3>
+                            <h3 className="text-lg font-semibold text-gray-700">{cat.title}</h3>
                         </div>
                     </div>
                 ))}
