@@ -1,7 +1,7 @@
 import React from 'react'
 import Herosub from './Herosub'
 import AnimationCard from '../../lib/AnimationCard'
-
+import banner from '../../assets/banner.png'
 function Herosection() {
     return (
         <div>
@@ -9,7 +9,7 @@ function Herosection() {
                 className="hero h-[32rem]"
                 style={{
                     backgroundImage:
-                        "url(https://t4.ftcdn.net/jpg/02/16/47/35/360_F_216473592_NefHePTpMfvYMNjD3UQTUVJy7DFPwqKA.jpg)",
+                        `url(${banner})`,
                 }}
             >
                 <div className="hero-overlay"></div>
