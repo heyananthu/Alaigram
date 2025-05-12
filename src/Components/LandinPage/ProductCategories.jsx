@@ -1,5 +1,6 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 const categories = [
     {
         title: "Organic Foods & Beverages",
@@ -21,10 +22,6 @@ const categories = [
         title: "Traditional Arts & Crafts",
         image: "https://indian.handicrafts.gov.in/files/scheme_file/g18.jpg"
     },
-    // {
-    //     title: "Eco-Friendly Packaging",
-    //     image: "https://www.artworkabode.com/blog/wp-content/uploads/2023/09/MicrosoftTeams-image-43.jpg"
-    // },
     {
         title: "Home Décor",
         image: "https://www.latestbuy.com.au/cdn/shop/files/candles_fa74f788-2748-4d66-9c01-4c841ae398fa.png?v=1725625932&width=1000"
@@ -42,7 +39,7 @@ const categories = [
         title: "Handmade Jewelry",
         image: "https://www.thebeadtraders.com/cdn/shop/articles/how-to-calculate-your-profit-margins-for-your-handmade-jewelry-business-517571_460x@2x.jpg?v=1706029816"
     }
-]
+];
 
 function ProductCategories() {
     return (
@@ -55,25 +52,40 @@ function ProductCategories() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {categories.map((cat, index) => (
-                    <Link to={cat.link}
-                        key={index}
-                        className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
-                        
-                    >
-                        <img
-                            src={cat.image}
-                            alt={cat.title}
-                            className="h-48 w-full object-cover"
-                        />
-                        <div className="p-4 text-center">
-                            <h3 className="text-lg font-semibold text-gray-700">{cat.title}</h3>
+                {categories.map((cat, index) => {
+                    const CardContent = (
+                        <>
+                            <img
+                                src={cat.image}
+                                alt={cat.title}
+                                className="h-48 w-full object-cover"
+                            />
+                            <div className="p-4 text-center">
+                                <h3 className="text-lg font-semibold text-gray-700">{cat.title}</h3>
+                            </div>
+                        </>
+                    );
+
+                    return cat.link ? (
+                        <Link
+                            to={cat.link}
+                            key={index}
+                            className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                        >
+                            {CardContent}
+                        </Link>
+                    ) : (
+                        <div
+                            key={index}
+                            className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                        >
+                            {CardContent}
                         </div>
-                    </Link>
-                ))}
+                    );
+                })}
             </div>
         </section>
-    )
+    );
 }
 
-export default ProductCategories
+export default ProductCategories;
