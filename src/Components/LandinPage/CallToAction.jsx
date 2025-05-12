@@ -10,7 +10,7 @@ function CallToAction() {
                 <p className='font-bold'>Explore our collection today or partner with us to support ethical trade practices that empower rural artisans!
                 </p>
                 <p>🌊 Alaigram – Waves of Change, Strengthening Rural India! 🌿</p>
-                <div className="space-x-4 space-y-3 md:flex justify-center">
+                {/* <div className="space-x-4 space-y-3 md:flex justify-center">
                     <Animation>
                         <button className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Discover Our Products</button>
                     </Animation>
@@ -20,7 +20,7 @@ function CallToAction() {
                     <Animation>
                         <button className="px-6 py-3 bg-yellow-500 text-white rounded hover:bg-yellow-600 transition">Join Our Mission</button>
                     </Animation>
-                </div>
+                </div> */}
             </div>
         </section>
     )

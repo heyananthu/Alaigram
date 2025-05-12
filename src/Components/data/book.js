@@ -1,0 +1,203 @@
+import Agni from '../../assets/books/agni.jpg';
+import Kunjunni from '../../assets/books/Kunhunni.jpg';
+import Kathaparayan from '../../assets/books/Katha Parayanoru Muttassi.png';
+import Manthrikakudukka from '../../assets/books/manthrika-kudukka.jpg';
+import MayalokathileNooni from '../../assets/books/Mayalokathile Nooni.jpg';
+import Mittay from '../../assets/books/mittayi.jpg';
+import Orunadi from '../../assets/books/oru-nadi.jpg';
+import Sneham from '../../assets/books/sneham.jpg';
+import Unnik from '../../assets/books/unnik.jpg';
+import Valaran from '../../assets/books/valaran.jpg';
+import Veetilek from '../../assets/books/veetilek.jpg';
+
+const books =
+    [
+        {
+            "Item Name": "GOPI DIARIES SNEHAM ARIYUNNU",
+            "SKU": "AB0002",
+            "HSN/SAC": "49011010",
+            "Description": "ഒരു തൂവെള്ള പഞ്ഞിക്കെട്ടുപോലെയിരുന്ന ഗോപി എങ്ങനെ ധൈര്യശാലിയും ശക്തിശാലിയും കൂടാതെ വികൃതിയുമായ ഒരു നായയായി വളർന്നുവരുന്നു എന്നതാണ് സ്‌നേഹം അറിയുന്നു എന്ന കഥയിലുള്ളത്. ഗോപി നേരിടുന്ന സാഹചര്യങ്ങളും അവൻ കണ്ടുമുട്ടുന്ന കൂട്ടുകാരും ഈ കഥയിൽ നിറഞ്ഞു നിൽക്കുന്നു. കുട്ടികളുടെയും മുതിർന്നവരുടെയും ഹൃദയത്തിലേക്ക് ഒരുപോലെ നടന്നുകയറുകയാണ് ഗോപി ഈ കഥയിലൂടെ.",
+            "Rate": "INR 250.00",
+            "CF.Author": "SUDHA MURTY",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "31-10-2024",
+            "CF.No of Pages": "120",
+            "CF.Edition": "2",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Sneham
+        },
+        {
+            "Item Name": "GOPI DIARIES VALARAN THUDANGUNNU",
+            "SKU": "AB0003",
+            "HSN/SAC": "49011010",
+            "Description": "ഗോപിയുടെ ജീവിതത്തിലേക്ക് വരുന്ന സുന്ദരിയായ നോവ എന്ന നായയും അവർ തമ്മിലുള്ള സ്നേഹവും അവരിലൂടെ ഒരു പുതിയ കുടുംബം ഉണ്ടാവുന്നതിനെക്കുറിച്ചുമാണ് \"ഗോപി ഡയറീസ് : വളരാന്‍ തുടങ്ങുന്നു\" എന്ന ഈ കഥയിൽ പറയുന്നത്. സമര്‍ത്ഥനായ ഒരു നായയായി ഗോപി മാറുന്നതും അവന്‍ തന്റെ കുഞ്ഞുങ്ങളെ ഒരച്ഛന്റെ കരുതലോടെ പരിപാലിക്കുന്നതും അറിവ് പകര്‍ന്നുകൊടുക്കുന്നതുമെല്ലാം ഈ കഥയിലൂടെ കാണാം.",
+            "Rate": "INR 250.00",
+            "CF.Author": "SUDHA MURTY",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "31-10-2024",
+            "CF.No of Pages": "128",
+            "CF.Edition": "2",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Valaran
+        },
+        {
+            "Item Name": "GOPI DIARIES VEETTILEKKU VARUNNU",
+            "SKU": "AB0004",
+            "HSN/SAC": "49011010",
+            "Description": "ഗോപി എന്ന് പേരുള്ള ഒരു നായയുടെയും അവനെ ദത്തെടുത്തു വളർത്തുന്ന സ്നേഹനിധികളായ അവന്റെ കുടുംബത്തിന്റെയും കഥയാണിത്. ഒരു തൂവെള്ള പഞ്ഞിക്കട്ടപോലെ ചെറുതായിരുന്ന ഗോപി വളരെ പെട്ടെന്നുതന്നെ അവന്റെ ചുറ്റുമുള്ള ലോകത്തെയും അവിടെയുള്ള മനുഷ്യരെയും മനസ്സിലാക്കാൻ പാകത്തിന് വളർന്നുവരുന്നു. അജ്ജ, അജ്ജി, താച്ചി അജ്ജി, എന്നിങ്ങനെ അനേകം അംഗങ്ങളുള്ള ഒരു കുടുംബത്തിലെ അരുമയായ അംഗമായി ഗോപി മാറുന്നതും അവന്റെ കുടുംബത്തിലെ എല്ലാവരോടുമുള്ള സ്നേഹവും ഗോപിയുടെ കാഴ്ചപ്പാടിലൂടെ കാണിച്ചുതരികയാണ് സുധാ മൂർത്തി.",
+            "Rate": "INR 200.00",
+            "CF.Author": "SUDHA MURTY",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "31-10-2024",
+            "CF.No of Pages": "88",
+            "CF.Edition": "2",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Veetilek
+        },
+        {
+            "Item Name": "ORU NADHIYUM KURE MAYAKAZHCHAKALUM",
+            "SKU": "AB0010",
+            "HSN/SAC": "49011010",
+            "Description": "",
+            "Rate": "INR 260.00",
+            "CF.Author": "SUDHA MURTY",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "03-09-2024",
+            "CF.No of Pages": "208",
+            "CF.Edition": "1",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Orunadi
+        },
+        {
+            "Item Name": "MANTHRIKA KUDUKKAYUDE KATHA",
+            "SKU": "AB0007",
+            "HSN/SAC": "49011010",
+            "Description": "കഥ പറയാനൊരു മുത്തശ്ശിക്കു ശേഷം കുട്ടികൾക്കായുള്ള സുധാ മൂർത്തിയുടെ മറ്റൊരു കഥച്ചെപ്പ്. കൊറോണക്കാലത്തെ അതിജീവിക്കാനും മഹാമാരിയിൽ ബുദ്ധിമുട്ടുന്നവരെ സഹായിക്കാനുള്ള കരുതലും കഥകളും അടങ്ങിയ പുസ്തകം. മഹാമാരിയുടെ വർഷം എങ്ങനെയായിരുന്നു എന്നറിയാൻ ഭാവിതലമുറ ശ്രമിക്കുമ്പോൾ, ലോക്ഡൗണിലെ ഒരു ദിവസം എങ്ങനെയായിരുന്നുവെന്ന് മുത്തശ്ശിമാരുടെ കഥകൾ വെളിപ്പെടുത്തുന്നു. പല നാടുകളും രാജ്യങ്ങളും താണ്ടുന്ന കഥകൾ കൊച്ചു വായനക്കാരെ ഒരുപാട് കാതങ്ങൾ സഞ്ചരിക്കാൻ സഹായിക്കും. കഥകളോടൊപ്പംതന്നെ മറ്റുള്ളവരെ സഹായിക്കാനുള്ള പാഠങ്ങളും ഈ പുസ്തകം കുട്ടികളെ പഠിപ്പിക്കുന്നു. വിവർത്തനം: രാജു നരൻ",
+            "Rate": "INR 299.00",
+            "CF.Author": "SUDHA MURTY",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "30-09-2024",
+            "CF.No of Pages": "240",
+            "CF.Edition": "2",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Manthrikakudukka
+        },
+        {
+            "Item Name": "KATHA PARAYANORU MUTHASSI",
+            "SKU": "AB0005",
+            "HSN/SAC": "49011010",
+            "Description": "മുത്തശ്ശിക്കഥകളുടെ മാധുര്യമേറുന്ന സമാഹാരം. തന്റെ അരികെ അവധിക്കാലം ആഘോഷിക്കാനെത്തുന്ന ആനന്ദ്, കൃഷ്ണ, രഘു, മീനു എന്നീ കുരുന്നുകൾക്ക് മുന്നിൽ കഥകളുടെ വിസ്മയലോകം മുത്തശ്ശി ഒരുക്കുന്നു. അതിലൂടെ അവരിൽ രാജാക്കന്മാരുടെയും രാജകുമാരിമാരുടെയും നിധികളുടെയും വഞ്ചകരുടെയും ദൈവങ്ങളുടെയും മൃഗങ്ങളുടെയും അമ്പരിപ്പിക്കുന്നതും അത്ഭുതപ്പെടുത്തുന്നതുമായ കഥകൾ നിറയുന്നു. കുട്ടികൾക്ക് വിനോദവും വിജ്ഞാനവും പകരുന്ന ഈ പുസ്തകത്തിന് അതിമനോഹരമായ ചിത്രങ്ങളും മാറ്റുകൂട്ടുന്നു.",
+            "Rate": "INR 250.00",
+            "CF.Author": "SUDHA MURTY",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "31-08-2024",
+            "CF.No of Pages": "208",
+            "CF.Edition": "3",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Kathaparayan
+        },
+        {
+            "Item Name": "MAYALOKATHILE NOONI",
+            "SKU": "AB0008",
+            "HSN/SAC": "49011010",
+            "Description": "ബംഗളൂരുവിലെ തിരക്കേറിയ യാന്ത്രിക ജീവിതത്തില്‍നിന്നും വടക്കന്‍ കര്‍ണ്ണാടകയിലെ സോമനഹള്ളി എന്ന ചെറിയൊരു ഗ്രാമത്തിേലക്ക് അവധിക്കാലം ആഘോഷിക്കാന്‍ എത്തുന്ന നൂനിയുടെ കഥ. അജ്ജയും അജ്ജിയും കളിക്കൂട്ടുകാരുമായി ഗ്രാമീണ നന്മകളിലേക്ക ചുവടുവയ്ക്കുന്ന നൂനി ഒരു ദിവസം കാട്ടിലെ ഒറ്റപ്പെട്ട പടിക്കിണര്‍ കണ്ടെത്തുന്നതോടെ കഥ മാറുന്നു. കഥപറച്ചിലില്‍ സുധാമൂര്‍ത്തി പുലര്‍ത്തുന്ന ലളിതമായ അതേ ആഖ്യാനരീതി വിവര്‍ത്തകനും കവിയുമായ ദേശമംഗലവും പിന്തുടരുന്നു. സാഹസിക കഥകള്‍ ഇഷ്ടപ്പെടുന്ന കുട്ടിവായനക്കാര്‍ക്കു നൂനിയെയും അവളുടെ കൂട്ടുകാരെയും ചേര്‍ത്തു പിടിക്കാം.",
+            "Rate": "INR 280.00",
+            "CF.Author": "SUDHA MURTY",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "24-08-2024",
+            "CF.No of Pages": "224",
+            "CF.Edition": "4",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: MayalokathileNooni
+        },
+        {
+            "Item Name": "MITTAYIPOTHI",
+            "SKU": "AB0009",
+            "HSN/SAC": "49011010",
+            "Description": "കുട്ടികൾക്ക് വായിച്ചുരസിക്കാൻ മധുരം കിനിയുന്ന കഥകൾ. വായനയുടെയും അറിവിന്റെയും ലോകത്തേക്ക് ചുവടുവയ്ക്കുന്ന ഓരോ കുട്ടിയും കേട്ടും വായിച്ചും വളരേണ്ട കഥകളാണിത്. മലയാള ബാലസാഹിത്യത്തിലെ ക്ലാസ്സിക് രചന.",
+            "Rate": "INR 399.00",
+            "CF.Author": "SUMANGALA",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "MAMBAZHAM AN IMPRINT OF DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "30-09-2024",
+            "CF.No of Pages": "288",
+            "CF.Edition": "13",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Mittay
+        },
+        {
+            "Item Name": "KUNHUNNIKKAVITHAKAL",
+            "SKU": "AB0006",
+            "HSN/SAC": "49011010",
+            "Description": "",
+            "Rate": "INR 260.00",
+            "CF.Author": "KUNHUNNI MASH",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "30-01-2025",
+            "CF.No of Pages": "216",
+            "CF.Edition": "11",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Kunjunni
+        },
+        {
+            "Item Name": "UNNIKUTTANTE LOKAM",
+            "SKU": "AB0011",
+            "HSN/SAC": "49011010",
+            "Description": "ചെടികളും തൊടികളും വേട്ടാളന്‍കൂടുകളും മരങ്ങളും മൃഗങ്ങളും പക്ഷികളും ഉണ്ണിക്കുട്ടനോട് വര്‍ത്തമാനങ്ങള്‍ പറഞ്ഞു. അവയുടെ പുഞ്ചിരിയിലൂടെ, കിന്നാരത്തിലൂടെ ഉണ്ണിക്കുട്ടന്റെ ലോകം വളരുകയായി... അച്ഛനും അമ്മയും കുട്ട്യേട്ടനും അമ്മിണിയും മുത്തച്ഛനും മുത്തശ്ശിയും കുട്ടന്‍നായരും സഹപാഠികളും അവന്റെ കിളുന്നു മനസ്സില്‍ വിസ്മയങ്ങളുടെ പുതിയ ചിത്രങ്ങള്‍ വരച്ചു. വേനലും മഞ്ഞും മഴയും ഉണ്ണിക്കുട്ടന്റെ ലോകത്ത് ആയിരമായിരം വര്‍ണ്ണങ്ങള്‍ നെയ്തു. വിഷുവും ഓണവും തിരുവാതിരയും അവന്റെ ഹൃദയത്തെ ഉമ്മവച്ചുണര്‍ത്തി... ഒരു കുരുന്നു ഹൃദയത്തിന്റെ ആഹ്ലാദത്തിന്റെ, കുസൃതിത്തരിപ്പുകളുടെ, വിസ്മയങ്ങളുടെ, കൊച്ചുകൊച്ചു ദുഃഖങ്ങളുടെ കഥയാണ് അവാച്യസുന്ദരമായ ഈ നോവല്‍.",
+            "Rate": "INR 299.00",
+            "CF.Author": "NANDANAR",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "29-06-2024",
+            "CF.No of Pages": "240",
+            "CF.Edition": "22",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Unnik
+        },
+        {
+            "Item Name": "AGNICHIRAKUKAL",
+            "SKU": "AB0001",
+            "HSN/SAC": "49011010",
+            "Description": "മിസൈൽ ടെക്നോളജി വിദഗ്ധനായ ഇന്ത്യൻ ശാസ്ത്രഞൻ എ പി ജെ അബ്ദുൽ കലാമിന്റെ ആത്മകഥ അദ്ദേഹം പ്രാധിനിത്യം വഹിക്കുന്ന സാധാരക്കാരുടെ സമൂഹത്തിനു ഉത്തേജനവും ആത്മവിശ്വാസവും പകരും വിധം അദ്ദേഹത്തിന്റെ ഉയർത്തെഴുനേൽപ്പിന്റെ ചരിത്രം ആലേഖനം ചെയ്തിരിക്കുന്നു ഈ കൃതിയിൽ.",
+            "Rate": "INR 350.00",
+            "CF.Author": "A P J ABDUL KALAM",
+            "CF.Language": "MALAYALAM",
+            "CF.Publisher": "DC BOOKS",
+            "CF.Category": "CHILDRENS BOOKS",
+            "CF.Publishing Date": "19-02-2025",
+            "CF.No of Pages": "296",
+            "CF.Edition": "102",
+            "CF.Binding": "PAPER BACK",
+            "CF.Type": "SINGLE",
+            img: Agni
+        }
+    ]
+export default books;

@@ -1,62 +1,61 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Logo from '../../assets/Logo3.png';
-import { CiSearch } from "react-icons/ci";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from 'framer-motion';
 import Animationview from '../../lib/AnimationCard';
-import { Link } from 'react-router-dom';
+
+// Reusable NavItem
+const NavItem = ({ label, to, onClick }) => (
+    <li
+        onClick={onClick}
+        className="relative cursor-pointer after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
+    >
+        <Link to={to} className="px-3 py-2 inline-block">{label}</Link>
+    </li>
+);
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const NavItem = ({ label, onClick }) => (
-        <li
-            onClick={onClick}
-            className="relative cursor-pointer after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all after:duration-300 hover:after:w-full"
-        >
-            <a className="px-3 py-2 inline-block">{label}</a>
-        </li>
-    );
-
     return (
-        <div className="w-full px-4 py-3 bg-white border-b-2 relative">
+        <div className="w-full px-4 py-3 bg-white border-b-2 relative z-50">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between h-16">
 
-                {/* Left: Logo */}
+                {/* Logo on the left */}
                 <div className="flex-shrink-0">
-                    <img src={Logo} alt="Logo" className="h-32 w-36 object-contain " />
+                    <Link to="/">
+                        <img src={Logo} alt="Logo" className="h-32 w-36 object-contain" />
+                    </Link>
                 </div>
 
-                {/* Center Nav - Hidden on mobile */}
-                <Animationview>
-                    <div className="hidden md:flex">
-                        <ul className="flex gap-6 items-center">
-                            <Link to='/'><NavItem label="Home" /></Link>
-                            <Link to='/aboutus'><NavItem label="About" /></Link>
-                            {/* <NavItem label="Blog" /> */}
-                            <Link to="/contactus"><NavItem label="Contact" /></Link>
-                        </ul>
-                    </div>
-                </Animationview>
+                {/* Menu + Hamburger on the right */}
+                <div className="flex items-center gap-6">
+                    {/* Desktop Menu */}
+                    <Animationview>
+                        <nav className="hidden md:flex">
+                            <ul className="flex gap-6 items-center">
+                                <NavItem label="Home" to="/" />
+                                <NavItem label="About" to="/aboutus" />
+                                <NavItem label="Contact" to="/contactus" />
+                            </ul>
+                        </nav>
+                    </Animationview>
 
-                {/* Right: Search & Hamburger on Mobile */}
-                <Animationview>
-                    <div className="flex items-center gap-4 md:gap-2">
-                        <div className="hidden md:flex items-center gap-2">
-                            <CiSearch size={20} />
-                            <h1 className="underline cursor-pointer">Search</h1>
-                        </div>
+                    {/* Hamburger Icon for Mobile */}
+                    <Animationview>
                         <div className="md:hidden">
                             <button onClick={() => setIsOpen(!isOpen)}>
                                 {isOpen ? <IoClose size={28} /> : <GiHamburgerMenu size={24} />}
                             </button>
                         </div>
-                    </div>
-                </Animationview>
+                    </Animationview>
+                </div>
+
             </div>
 
-            {/* Mobile Menu - Slide from Left */}
+            {/* Mobile Menu */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
@@ -67,19 +66,15 @@ function Navbar() {
                         className="md:hidden fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg z-50 p-6"
                     >
                         <ul className="flex flex-col gap-6 mt-16">
-                            <Link to='/'><NavItem label="Home" onClick={() => setIsOpen(false)} /></Link>
-                            <Link to='/aboutus'><NavItem label="About" onClick={() => setIsOpen(false)} /></Link>
-                            {/* <NavItem label="Blog" onClick={() => setIsOpen(false)} /> */}
-                            <Link to='/contactus'><NavItem label="Contact" onClick={() => setIsOpen(false)} /></Link>
-                            <div className="flex items-center gap-2 mt-4">
-                                <CiSearch size={20} />
-                                <h1 className="underline cursor-pointer">Search</h1>
-                            </div>
+                            <NavItem label="Home" to="/" onClick={() => setIsOpen(false)} />
+                            <NavItem label="About" to="/aboutus" onClick={() => setIsOpen(false)} />
+                            <NavItem label="Contact" to="/contactus" onClick={() => setIsOpen(false)} />
                         </ul>
                     </motion.div>
                 )}
             </AnimatePresence>
         </div>
+
     );
 }
 

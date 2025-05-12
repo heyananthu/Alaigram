@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const categories = [
     {
         title: "Organic Foods & Beverages",
@@ -31,7 +31,8 @@ const categories = [
     },
     {
         title: "Books & Stationery",
-        image: "https://okcredit-blog-images-prod.storage.googleapis.com/2021/01/shutterstock_481616641.jpg"
+        image: "https://okcredit-blog-images-prod.storage.googleapis.com/2021/01/shutterstock_481616641.jpg",
+        link: "/books"
     },
     {
         title: "Natural Beauty & Cosmetics",
@@ -55,9 +56,10 @@ function ProductCategories() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {categories.map((cat, index) => (
-                    <div
+                    <Link to={cat.link}
                         key={index}
                         className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
+                        
                     >
                         <img
                             src={cat.image}
@@ -67,7 +69,7 @@ function ProductCategories() {
                         <div className="p-4 text-center">
                             <h3 className="text-lg font-semibold text-gray-700">{cat.title}</h3>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </div>
         </section>

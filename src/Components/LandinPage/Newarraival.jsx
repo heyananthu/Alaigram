@@ -85,7 +85,7 @@ function Newarraival() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {data.map((item, index) => (
                         <Animationview key={index}>
-                            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-5 text-center h-[28rem] flex flex-col justify-between">
+                            <div className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-5 text-center h-[25rem] flex flex-col justify-between">
                                 <div className="flex justify-center">
                                     <img
                                         src={item.img}
@@ -96,9 +96,9 @@ function Newarraival() {
                                 <div className="mt-4 flex flex-col flex-1">
                                     <h2 className="text-xl font-semibold text-blue-800">{item.title}</h2>
                                     <p className="text-sm text-gray-600 mt-2 line-clamp-3">{item.discription}</p>
-                                    <button className="mt-auto w-full bg-gradient-to-r from-blue-700 to-blue-400 text-white py-2 rounded-lg transition duration-300">
+                                    {/* <button className="mt-auto w-full bg-gradient-to-r from-blue-700 to-blue-400 text-white py-2 rounded-lg transition duration-300">
                                         Buy Now
-                                    </button>
+                                    </button> */}
                                 </div>
                             </div>
                         </Animationview>

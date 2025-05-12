@@ -6,7 +6,7 @@ const WhatsappChat = () => {
     const [open, setOpen] = useState(false);
     const [message, setMessage] = useState("");
 
-    const phoneNumber = "92891 00797"; // Replace with your number
+    const phoneNumber = "9289100797"; // Replace with your number
 
     const handleSend = () => {
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
