@@ -57,10 +57,8 @@ function ProductCategories() {
                 {categories.map((cat, index) => (
                     <div
                         key={index}
-                        className="cursor-pointer bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
-                        onClick={() => {
-                            if (cat.link) navigate(cat.link);
-                        }}
+                        onClick={() => cat.link && navigate(cat.link)}
+                        className={`bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer`}
                     >
                         <img
                             src={cat.image}

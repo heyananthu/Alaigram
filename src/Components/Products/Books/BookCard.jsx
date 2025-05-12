@@ -16,7 +16,7 @@ export default function BookCard({ book }) {
         <>
             <div
                 onClick={() => setOpen(true)}
-                className="group bg-white rounded-3xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
+                className="group bg-white rounded-3xl shadow-md overflow-hidden transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
                 <div className="relative h-60 overflow-hidden">
                     <img
@@ -24,7 +24,7 @@ export default function BookCard({ book }) {
                         alt={book["Item Name"]}
                         className="object-cover w-full h-full transition duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-3">
+                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/70 to-transparent p-3 pointer-events-none">
                         <h2 className="text-white text-lg font-bold line-clamp-1">
                             {book["Item Name"]}
                         </h2>
@@ -42,8 +42,11 @@ export default function BookCard({ book }) {
                 </div>
             </div>
 
-            {/* Modal only mounts when open */}
-            {open && <BookModal book={book} onClose={() => setOpen(false)} />}
+            {open && (
+                <div className="fixed inset-0 z-50">
+                    <BookModal book={book} onClose={() => setOpen(false)} />
+                </div>
+            )}
         </>
     );
 }
