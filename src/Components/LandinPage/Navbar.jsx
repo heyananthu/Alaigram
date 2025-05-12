@@ -25,7 +25,7 @@ function Navbar() {
 
                 {/* Logo on the left */}
                 <div className="flex-shrink-0">
-                    <Link to="/">
+                    <Link to="/" onClick={() => setIsOpen(false)}>
                         <img src={Logo} alt="Logo" className="h-32 w-36 object-contain" />
                     </Link>
                 </div>
@@ -36,9 +36,9 @@ function Navbar() {
                     <Animationview>
                         <nav className="hidden md:flex">
                             <ul className="flex gap-6 items-center">
-                                <NavItem label="Home" to="/" />
-                                <NavItem label="About" to="/aboutus" />
-                                <NavItem label="Contact" to="/contactus" />
+                                <NavItem label="Home" to="/" onClick={() => setIsOpen(false)} />
+                                <NavItem label="About" to="/aboutus" onClick={() => setIsOpen(false)} />
+                                <NavItem label="Contact" to="/contactus" onClick={() => setIsOpen(false)} />
                             </ul>
                         </nav>
                     </Animationview>
@@ -74,7 +74,6 @@ function Navbar() {
                 )}
             </AnimatePresence>
         </div>
-
     );
 }
 

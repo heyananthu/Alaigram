@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from '../Components/LandinPage/Navbar'
 import Herosection from '../Components/LandinPage/Herosection'
 import CatagorySection from '../Components/LandinPage/CatagorySection'
@@ -13,6 +13,9 @@ import StrategicGoals from '../Components/LandinPage/StrategicGoals'
 import CallToAction from '../Components/LandinPage/CallToAction'
 import MissionSection from '../Components/LandinPage/MissionSection'
 function Landingpage() {
+   useEffect(() => {
+        window.scrollTo(0, 0); // Scrolls to top when the component mounts
+    }, []);
     return (
         <div className='bg-white h-full font-poppins'>
             <Navbar />

@@ -1,9 +1,16 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BookModal from './BookModal';
 import { FaRupeeSign } from 'react-icons/fa';
 
 export default function BookCard({ book }) {
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        document.body.style.overflow = open ? 'hidden' : 'auto';
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, [open]);
 
     return (
         <>
@@ -11,7 +18,6 @@ export default function BookCard({ book }) {
                 onClick={() => setOpen(true)}
                 className="group bg-white rounded-3xl shadow-md overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl cursor-pointer"
             >
-                {/* Book Cover */}
                 <div className="relative h-60 overflow-hidden">
                     <img
                         src={book.img}
@@ -25,7 +31,6 @@ export default function BookCard({ book }) {
                     </div>
                 </div>
 
-                {/* Book Info */}
                 <div className="p-4 space-y-2">
                     <p className="text-gray-600 text-sm line-clamp-1">
                         Author: <span className="text-gray-800 font-medium">{book["CF.Author"]}</span>
@@ -37,13 +42,8 @@ export default function BookCard({ book }) {
                 </div>
             </div>
 
-            {open && (
-                <BookModal
-                    book={book}
-                    onClose={() => setOpen(false)}
-                    closeOnOutsideClick={true} // Add prop to handle closing modal when clicking outside
-                />
-            )}
+            {/* Modal only mounts when open */}
+            {open && <BookModal book={book} onClose={() => setOpen(false)} />}
         </>
     );
 }
