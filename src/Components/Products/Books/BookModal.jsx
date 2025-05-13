@@ -11,7 +11,7 @@ export default function BookModal({ book, onClose }) {
 
     // ✅ Function to handle Buy button
     const handleBuy = () => {
-        const phoneNumber = '8136819986'; // Replace with your WhatsApp number (only digits)
+        const phoneNumber = '9289100797'; // Replace with your WhatsApp number (only digits)
         const message = `
 
 Title: ${book["Item Name"]}
