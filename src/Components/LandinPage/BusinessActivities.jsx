@@ -1,9 +1,12 @@
 import React from 'react'
+import whychooseus from '../../assets/why choose us.jpg'
+import ourstory from '../../assets/Our Story.jpg'
+import distribution from '../../assets/Distribution Services2.webp'
 
 const activities = [
     {
         title: 'Distribution Services',
-        image: 'https://img.freepik.com/free-photo/warehouse-workers-checking-shipping-delivery_23-2148888777.jpg?w=740',
+        image: distribution,
         description: [
             {
                 subtitle: 'Comprehensive Retail Partnerships',
@@ -21,7 +24,7 @@ const activities = [
     },
     {
         title: 'Product Innovation',
-        image: 'https://img.freepik.com/free-photo/artisan-hands-carving-wood-artwork-workshop_53876-137129.jpg?t=st=1715169034~exp=1715172634~hmac=b9c17beff3e27b7c7d51b481bf8f5ed60b36199d223ad6d15d6826a0d1e7d552&w=740',
+        image: ourstory,
         description: [
             {
                 subtitle: 'Organic Foods & Beverages',
@@ -57,9 +60,9 @@ const activities = [
 
 function BusinessActivities() {
     return (
-        <section className="py-20 px-6 md:px-24 bg-white">
+        <section className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold text-gray-800">Our Business Activities</h2>
+                <h2 className="text-4xl md:text-6xl font-bold text-gray-800">Our Business Activities</h2>
                 <p className="text-lg text-blue-600 mt-2">Two Pillars of Growth</p>
             </div>
 
@@ -67,18 +70,18 @@ function BusinessActivities() {
                 {activities.map((item, index) => (
                     <div
                         key={index}
-                        className={`flex flex-col md:flex-row ${
-                            index % 2 !== 0 ? 'md:flex-row-reverse' : ''
+                        className={`flex flex-col lg:flex-row ${
+                            index % 2 !== 0 ? 'lg:flex-row-reverse' : ''
                         } items-center gap-10`}
                     >
-                        <div className="md:w-1/2">
+                        <div className="lg:w-1/2">
                             <img
                                 src={item.image}
                                 alt={item.title}
-                                className="w-full h-auto rounded-xl shadow-md"
+                                className="w-full h-auto lg:h-[35rem] rounded-xl shadow-lg object-cover"
                             />
                         </div>
-                        <div className="md:w-1/2">
+                        <div className="lg:w-1/2">
                             <h3 className="text-2xl font-semibold text-blue-700 mb-4">
                                 {item.title}
                             </h3>

@@ -15,9 +15,9 @@ function AboutPage() {
                 <Navbar />
                 <Section1 />
                 {/* <AboutSection /> */}
+                <Section2 />
                 <BusinessActivities />
 
-                <Section2 />
                 <Section3 />
                 <Footer />
 

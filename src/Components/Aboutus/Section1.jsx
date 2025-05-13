@@ -1,6 +1,6 @@
 import React from 'react'
 import Breadcrumbs from './Breadcrumbs'
-
+import banner from '../../assets/aboutusbanner.jpg'
 function Section1() {
     return (
         <div>
@@ -8,7 +8,7 @@ function Section1() {
                 className="hero h-[23rem] bg-cover"
                 style={{
                     backgroundImage:
-                        "url(https://t4.ftcdn.net/jpg/06/22/74/79/360_F_622747997_4s5nw9y2WG3LJyQ5iRF4KRGLbySGRd82.jpg)",
+                        `url(${banner})`,
                 }}
             >
                 <div className="hero-overlay"></div>
