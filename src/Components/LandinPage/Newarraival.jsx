@@ -1,78 +1,10 @@
 import React from 'react';
 import Animationview from '../../lib/FadeInWhenVisible';
 import AnimationCard from '../../lib/AnimationCard';
-// import Agni from '../../assets/books/agni.jpg'
-// import Kathaparayan from '../../assets/books/Katha Parayanoru Muttassi.png'
-// import Kunjunni from '../../assets/books/Kunhunni.jpg'
-// import Manthrikakudukka from '../../assets/books/manthrika-kudukka.jpg'
-// import MayalokathileNooni from '../../assets/books/Mayalokathile Nooni.jpg'
-// import Mittay from '../../assets/books/mittayi.jpg'
-// import Orunadi from '../../assets/books/oru-nadi.jpg'
-// import Sneham from '../../assets/books/sneham.jpg'
-// import Unnik from '../../assets/books/unnik.jpg'
-// import Valaran from '../../assets/books/valaran.jpg'
-// import Veetilek from '../../assets/books/veetilek.jpg'
 import books from '../data/book'
+
+
 function Newarraival() {
-    // const data = [
-    //     {
-    //         title: "Wings of Fire",
-    //         // discription: "Natural remedies for daily health support.",
-    //         img: Agni
-    //     },
-    //     {
-    //         title: "Kunjunni Kavithakal",
-    //         // discription: "Organic solutions for healthy glowing skin.",
-    //         img: Kunjunni
-    //     },
-    //     {
-    //         title: "Katha Parayanoru Muttassi",
-    //         // discription: "Boost your gut with powerful herbal blends.",
-    //         img: Kathaparayan
-    //     },
-    //     {
-    //         title: "Manthrika Kudukka",
-    //         // discription: "Strengthen your immunity with Ayurvedic care.",
-    //         img: Manthrikakudukka
-    //     },
-    //     {
-    //         title: "Mayalokathile Nooni",
-    //         // discription: "Support cardiovascular wellness naturally.",
-    //         img: MayalokathileNooni
-    //     },
-    //     {
-    //         title: "Mittayi Pothy",
-    //         // discription: "Balance stress and improve sleep cycles.",
-    //         img: Mittay
-    //     },
-    //     {
-    //         title: "Oru Nadiyum Kure Kazhchakallum",
-    //         // discription: "Strengthen and nourish your hair roots.",
-    //         img: Orunadi
-    //     },
-    //     {
-    //         title: "Sneham",
-    //         // discription: "Natural care for hormonal balance & energy.",
-    //         img: Sneham
-    //     },
-    //     {
-    //         title: "Unnikkittante Lokham",
-    //         // discription: "Strengthen and nourish your hair roots.",
-    //         img: Unnik
-    //     },
-    //     {
-    //         title: "Valaran",
-    //         // discription: "Strengthen and nourish your hair roots.",
-    //         img: Valaran
-    //     },
-    //     {
-    //         title: "Veetilek",
-    //         // discription: "Strengthen and nourish your hair roots.",
-    //         img: Veetilek
-    //     },
-
-
-    // ];
 
     return (
         <div className="bg-gradient-to-br from-blue-50 to-blue-100 py-12">

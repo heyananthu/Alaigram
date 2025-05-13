@@ -1,11 +1,29 @@
 import { AiOutlineClose } from 'react-icons/ai';
 import { motion, AnimatePresence } from 'framer-motion';
+import { FaWhatsapp } from 'react-icons/fa'; // ✅ Add WhatsApp icon
 
 export default function BookModal({ book, onClose }) {
     const handleClickOutside = (e) => {
         if (e.target === e.currentTarget) {
             onClose();
         }
+    };
+
+    // ✅ Function to handle Buy button
+    const handleBuy = () => {
+        const phoneNumber = '8136819986'; // Replace with your WhatsApp number (only digits)
+        const message = `
+
+Title: ${book["Item Name"]}
+Author: ${book["CF.Author"]}
+Language: ${book["CF.Language"]}
+Rate: ₹${book.Rate}
+
+I am interested in buying this book.
+        `;
+
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
     };
 
     return (
@@ -53,8 +71,17 @@ export default function BookModal({ book, onClose }) {
                                 <li><strong>Edition:</strong> {book["CF.Edition"]}</li>
                                 <li><strong>Binding:</strong> {book["CF.Binding"]}</li>
                                 <li><strong>Publishing Date:</strong> {book["CF.Publishing Date"]}</li>
-                                <li><strong>Rate:</strong> {book.Rate}</li>
+                                <li><strong>Rate:</strong> ₹{book.Rate}</li>
                             </ul>
+
+                            {/* ✅ WhatsApp Buy Button */}
+                            <button
+                                onClick={handleBuy}
+                                className="mt-6 inline-flex items-center gap-2 px-5 py-2.5 bg-green-600 text-white font-semibold rounded-lg shadow hover:bg-green-700 transition"
+                            >
+                                <FaWhatsapp />
+                                Buy on WhatsApp
+                            </button>
                         </div>
                     </div>
                 </motion.div>

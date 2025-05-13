@@ -44,7 +44,6 @@ const categories = [
 function ProductCategories() {
     const navigate = useNavigate();
 
-    // Navigation handler
     const handleNavigate = (cat) => {
         if (cat.link) {
             navigate(cat.link);
@@ -63,6 +62,7 @@ function ProductCategories() {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                 {categories.map((cat, index) => {
                     const isClickable = !!cat.link;
+
                     return (
                         <div
                             key={index}
@@ -75,14 +75,24 @@ function ProductCategories() {
                                     handleNavigate(cat);
                                 }
                             } : undefined}
-                            className={`bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 ${isClickable ? "cursor-pointer" : "cursor-default"}`}
+                            className={`group relative bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 ${isClickable ? "cursor-pointer" : "cursor-default"}`}
                             style={{ outline: 'none' }}
                         >
-                            <img
-                                src={cat.image}
-                                alt={cat.title}
-                                className="h-48 w-full object-cover"
-                            />
+                            <div className="relative">
+                                <img
+                                    src={cat.image}
+                                    alt={cat.title}
+                                    className="h-48 w-full object-cover"
+                                />
+
+                                {/* Show overlay only on hover for non-clickable */}
+                                {!isClickable && (
+                                    <div className="absolute inset-0 bg-black bg-opacity-30 opacity-40 group-hover:opacity-70 transition-opacity duration-300 flex items-center justify-center">
+                                        <span className="text-white text-lg font-semibold">Coming Soon</span>
+                                    </div>
+                                )}
+                            </div>
+
                             <div className="p-4 text-center">
                                 <h3 className="text-lg font-semibold text-gray-700">{cat.title}</h3>
                             </div>
