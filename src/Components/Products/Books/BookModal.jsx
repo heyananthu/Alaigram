@@ -11,19 +11,18 @@ export default function BookModal({ book, onClose }) {
 
     // ✅ Function to handle Buy button
     const handleBuy = () => {
-        const phoneNumber = '9289100797'; // Replace with your WhatsApp number (only digits)
-        const message = `
+        const phoneNumber = "8136819986"; // no + or dashes
+const message = `Hello, I'm interested in buying this book:
 
 Title: ${book["Item Name"]}
 Author: ${book["CF.Author"]}
 Language: ${book["CF.Language"]}
 Rate: ₹${book.Rate}
 
-I am interested in buying this book.
-        `;
+Please let me know more.`;
 
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.open(url, '_blank');
+const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+window.open(url, '_blank');
     };
 
     return (
