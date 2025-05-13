@@ -44,6 +44,13 @@ const categories = [
 function ProductCategories() {
     const navigate = useNavigate();
 
+    // Navigation handler
+    const handleNavigate = (cat) => {
+        if (cat.link) {
+            navigate(cat.link);
+        }
+    };
+
     return (
         <section className="px-6 py-20 md:px-24 bg-white text-gray-800">
             <div className="max-w-7xl mx-auto text-center mb-12">
@@ -54,22 +61,34 @@ function ProductCategories() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {categories.map((cat, index) => (
-                    <div
-                        key={index}
-                        onClick={() => cat.link && navigate(cat.link)}
-                        className={`bg-white rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300 cursor-pointer`}
-                    >
-                        <img
-                            src={cat.image}
-                            alt={cat.title}
-                            className="h-48 w-full object-cover"
-                        />
-                        <div className="p-4 text-center">
-                            <h3 className="text-lg font-semibold text-gray-700">{cat.title}</h3>
+                {categories.map((cat, index) => {
+                    const isClickable = !!cat.link;
+                    return (
+                        <div
+                            key={index}
+                            role={isClickable ? "button" : undefined}
+                            tabIndex={isClickable ? 0 : undefined}
+                            onClick={isClickable ? () => handleNavigate(cat) : undefined}
+                            onTouchEnd={isClickable ? () => handleNavigate(cat) : undefined}
+                            onKeyDown={isClickable ? (e) => {
+                                if (e.key === "Enter" || e.key === " ") {
+                                    handleNavigate(cat);
+                                }
+                            } : undefined}
+                            className={`bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 ${isClickable ? "cursor-pointer" : "cursor-default"}`}
+                            style={{ outline: 'none' }}
+                        >
+                            <img
+                                src={cat.image}
+                                alt={cat.title}
+                                className="h-48 w-full object-cover"
+                            />
+                            <div className="p-4 text-center">
+                                <h3 className="text-lg font-semibold text-gray-700">{cat.title}</h3>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    );
+                })}
             </div>
         </section>
     );

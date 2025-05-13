@@ -35,7 +35,7 @@ export default function BookModal({ book, onClose }) {
                     </button>
 
                     <div className="flex flex-col sm:flex-row">
-                        <div className="w-full sm:w-1/3 h-48 bg-gray-100 rounded-lg overflow-hidden mb-4 sm:mb-0">
+                        <div className="w-full sm:w-1/3 h-44 md:h-full bg-gray-100 rounded-lg overflow-hidden mb-4 sm:mb-0">
                             <img
                                 src={book.img}
                                 alt={book["Item Name"]}

@@ -13,7 +13,7 @@ import StrategicGoals from '../Components/LandinPage/StrategicGoals'
 import CallToAction from '../Components/LandinPage/CallToAction'
 import MissionSection from '../Components/LandinPage/MissionSection'
 function Landingpage() {
-   useEffect(() => {
+    useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to top when the component mounts
     }, []);
     return (

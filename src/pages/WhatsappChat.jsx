@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
-import Logo from '../assets/Logo.png'
+import Logo from "../assets/Logo.png"; // update path if needed
+
 const WhatsappChat = () => {
     const [open, setOpen] = useState(false);
     const [message, setMessage] = useState("");
-
-    const phoneNumber = "9289100797"; // Replace with your number
+    const phoneNumber = "9289100797";
 
     const handleSend = () => {
-        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        if (message.trim() === "") return;
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+            message
+        )}`;
         window.open(url, "_blank");
+        setMessage("");
     };
 
     return (
-        <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2">
-            {/* Chat Popup */}
-            <div
-                className={`transition-all duration-300 ease-in-out transform origin-bottom-right ${open ? "scale-100 opacity-100" : "scale-0 opacity-0"
-                    }`}
-            >
-                <div className="w-80 h-[460px] bg-white rounded-xl shadow-xl flex flex-col overflow-hidden">
+        <>
+            {open && (
+                <div className="fixed bottom-20 right-6 z-50 w-80 h-[460px] bg-white rounded-xl shadow-xl flex flex-col overflow-hidden">
                     {/* Header */}
                     <div className="bg-green-600 px-4 py-3 flex items-center text-white">
                         <img
-                            src={Logo} // Replace with your logo path
+                            src={Logo}
                             alt="Support"
                             className="w-10 h-10 rounded-full border-2 object-cover border-white mr-3"
                         />
@@ -32,7 +32,12 @@ const WhatsappChat = () => {
                             <div className="font-semibold text-sm">Alaigram Support Team</div>
                             <div className="text-xs text-white/90">Online</div>
                         </div>
-                        <button onClick={() => setOpen(false)} className="text-white text-xl">&times;</button>
+                        <button
+                            onClick={() => setOpen(false)}
+                            className="text-white text-xl"
+                        >
+                            &times;
+                        </button>
                     </div>
 
                     {/* Chat Body */}
@@ -40,12 +45,14 @@ const WhatsappChat = () => {
                         <div className="bg-white max-w-[75%] px-3 py-2 rounded-lg shadow text-gray-800">
                             <p>Hi there 👋</p>
                             <p>How can I help you?</p>
-                            <div className="text-right text-[10px] text-gray-400 mt-1">12:46</div>
+                            <div className="text-right text-[10px] text-gray-400 mt-1">
+                                12:46
+                            </div>
                         </div>
                     </div>
 
                     {/* Input */}
-                    <div className=" flex items-center px-2 py-1 bg-white">
+                    <div className="flex items-center px-2 py-1 bg-white">
                         <input
                             type="text"
                             placeholder="Enter your message..."
@@ -61,16 +68,17 @@ const WhatsappChat = () => {
                         </button>
                     </div>
                 </div>
-            </div>
+            )}
 
-            {/* Floating WhatsApp Icon */}
+            {/* Floating WhatsApp Button */}
             <button
                 onClick={() => setOpen(!open)}
-                className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl"
+                className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl"
+                aria-label="Chat with us on WhatsApp"
             >
                 <FaWhatsapp />
             </button>
-        </div>
+        </>
     );
 };
 
