@@ -11,7 +11,7 @@ export default function BookModal({ book, onClose }) {
 
     // ✅ Function to handle Buy button
     const handleBuy = () => {
-        const phoneNumber = "8136819986"; // no + or dashes
+        const phoneNumber = "9289100797"; // no + or dashes
 const message = `Hello, I'm interested in buying this book:
 
 Title: ${book["Item Name"]}

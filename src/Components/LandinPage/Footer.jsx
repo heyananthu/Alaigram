@@ -6,7 +6,7 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
     return (
-        <footer className="footer footer-horizontal footer-center  text-base-content rounded p-10">
+        <footer className="footer footer-horizontal footer-center  text-base-content rounded p-10 ">
             <nav className="grid grid-flow-col gap-4">
                 <Link to='/aboutus' className="link link-hover">About us</Link>
                 <Link to='/contactus' className="link link-hover">Contact</Link>
