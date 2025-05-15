@@ -7,11 +7,11 @@ import { FaXTwitter } from "react-icons/fa6";
 function Footer() {
     return (
         <footer className="footer footer-horizontal footer-center  text-base-content rounded p-10 ">
-            <nav className="grid grid-flow-col gap-4">
-                <Link to='/aboutus' className="link link-hover">About us</Link>
+            <nav className="grid grid-flow-col gap-4 text-nowrap">
+                <Link to='/aboutus' className="link link-hover ">About us</Link>
                 <Link to='/contactus' className="link link-hover">Contact</Link>
-                <Link to='/books' className="link link-hover">Books</Link>
-                <Link to='/' className="link link-hover">New products</Link>
+                <Link to='/books' className="link link-hover">New Arraivals</Link>
+                {/* <Link to='/' className="link link-hover">New products</Link> */}
             </nav>
             <nav>
                 <div className="grid grid-flow-col gap-4">
