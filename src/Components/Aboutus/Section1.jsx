@@ -19,7 +19,7 @@ function Section1() {
                             Welcome to Alaigram United Private Limited
                         </p>
                         <p className="mb-5">
-                            Waves of Change:Connecting Rural India to the World
+                            Waves of Change : Connecting Rural India to the World
                         </p>
                         {/* <button className="btn btn-primary">Get Started</button> */}
                     </div>

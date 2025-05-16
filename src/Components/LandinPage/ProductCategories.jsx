@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
+import book from '../../assets/booksmain.jpg'
 const categories = [
     {
         title: "Organic Foods & Beverages",
@@ -28,7 +28,7 @@ const categories = [
     },
     {
         title: "Books & Stationery",
-        image: "https://okcredit-blog-images-prod.storage.googleapis.com/2021/01/shutterstock_481616641.jpg",
+        image: book,
         link: "/books"
     },
     {

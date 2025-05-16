@@ -1,14 +1,14 @@
 import React from 'react'
 import Breadcrumbs from './Breadcrumbs'
-
+import banner from '../../assets/contactbanner.jpg'
 function Section1() {
     return (
         <div>
             <div
-                className="hero h-[20rem]"
+                className="hero h-[23rem] bg-bottom"
                 style={{
                     backgroundImage:
-                        "url(https://static.vecteezy.com/system/resources/thumbnails/023/029/264/small/group-of-traditional-medicine-top-view-with-aesthetic-arrangement-on-concrete-background-photo.jpg)",
+                        `url(${banner})`,
                 }}
             >
                 <div className="hero-overlay"></div>
@@ -19,7 +19,7 @@ function Section1() {
                             Welcome to Alaigram United Private Limited
                         </p>
                         <p className="mb-5">
-                            Waves of Change:Connecting Rural India to the World
+                            Waves of Change : Connecting Rural India to the World
                         </p>
                         {/* <button className="btn btn-primary">Get Started</button> */}
                     </div>
