@@ -27,7 +27,7 @@ function Newarraival() {
                                     />
                                 </div>
                                 <div className="mt-4 flex flex-col flex-1">
-                                    <h2 className="text-xl font-semibold text-blue-800">{item["Item Name"]}</h2>
+                                    <h2 className="text-md font-semibold text-blue-800">{item["Item Name"]}</h2>
                                     {/* <p className="text-sm text-gray-600 mt-2 line-clamp-3">{item.discription}</p> */}
                                     {/* <button className="mt-auto w-full bg-gradient-to-r from-blue-700 to-blue-400 text-white py-2 rounded-lg transition duration-300">
                                         Buy Now
