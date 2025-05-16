@@ -5,6 +5,9 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from 'framer-motion';
 import Animationview from '../../lib/AnimationCard';
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaBluesky } from "react-icons/fa6";
 
 // Reusable NavItem
 const NavItem = ({ label, to, onClick }) => (
@@ -58,21 +61,78 @@ function Navbar() {
             {/* Mobile Menu */}
             <AnimatePresence>
                 {isOpen && (
-                    <motion.div
-                        initial={{ x: '-100%', opacity: 0 }}
-                        animate={{ x: 0, opacity: 1 }}
-                        exit={{ x: '-100%', opacity: 0 }}
-                        transition={{ duration: 0.4 }}
-                        className="md:hidden fixed top-0 left-0 w-3/4 h-full bg-white shadow-lg z-50 p-6"
-                    >
-                        <ul className="flex flex-col gap-6 mt-16">
-                            <NavItem label="Home" to="/" onClick={() => setIsOpen(false)} />
-                            <NavItem label="About" to="/aboutus" onClick={() => setIsOpen(false)} />
-                            <NavItem label="Contact" to="/contactus" onClick={() => setIsOpen(false)} />
-                        </ul>
-                    </motion.div>
+                    <>
+                        {/* Backdrop */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 0.5 }}
+                            exit={{ opacity: 0 }}
+                            className="fixed inset-0 bg-black z-40"
+                            onClick={() => setIsOpen(false)}
+                        />
+
+                        {/* Mobile Panel */}
+                        <motion.div
+                            initial={{ x: '100%' }}
+                            animate={{ x: 0 }}
+                            exit={{ x: '100%' }}
+                            transition={{ duration: 0.4, ease: 'easeInOut' }}
+                            className="fixed top-0 right-0 w-[85%] h-full bg-white z-50 rounded-l-md shadow-2xl flex flex-col justify-between p-6"
+                        >
+                            {/* Header */}
+                            <div className="flex justify-between items-center border-b pb-4 mb-6">
+                                <h2 className="text-xl font-bold text-primary">Menu</h2>
+                                <button
+                                    onClick={() => setIsOpen(false)}
+                                    className="text-gray-600 hover:text-red-500 transition"
+                                >
+                                    <IoClose size={28} />
+                                </button>
+                            </div>
+
+                            {/* Menu Links */}
+                            <ul className="flex flex-col gap-6 text-lg font-medium">
+                                <motion.li
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.1 }}
+                                >
+                                    <NavItem label="Home" to="/" onClick={() => setIsOpen(false)} />
+                                </motion.li>
+                                <motion.li
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.2 }}
+                                >
+                                    <NavItem label="About" to="/aboutus" onClick={() => setIsOpen(false)} />
+                                </motion.li>
+                                <motion.li
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                >
+                                    <NavItem label="Contact" to="/contactus" onClick={() => setIsOpen(false)} />
+                                </motion.li>
+                            </ul>
+
+                            {/* Footer */}
+                            <div className="mt-12 border-t pt-4 text-center text-sm text-gray-400">
+                                <p>Follow us</p>
+                                <div className="flex justify-center gap-4 mt-2">
+                                    <a href="https://www.facebook.com/profile.php?id=61576105015207" className="text-blue-500 transition"><FaFacebookF /></a>
+                                    <a href="https://www.instagram.com/alaigram.united/" className="text-pink-500 transition"><FaInstagram /></a>
+                                    <a href="https://x.com/alaigram_united" className="text-black transition"><FaXTwitter /></a>
+                                    <a href="https://bsky.app/profile/alaigram.bsky.social" className="text-sky-500 transition"><FaBluesky /></a>
+
+                                </div>
+                                <p className="mt-6">© 2025 Alaigram</p>
+                            </div>
+                        </motion.div>
+                    </>
                 )}
             </AnimatePresence>
+
+
         </div>
     );
 }
