@@ -1,7 +1,7 @@
 import React from 'react'
 import Herosub from './Herosub'
 import AnimationCard from '../../lib/AnimationCard'
-import banner from '../../assets/banner.JPEG'
+import banner from '../../assets/banner.jpeg'
 function Herosection() {
     return (
         <div>
