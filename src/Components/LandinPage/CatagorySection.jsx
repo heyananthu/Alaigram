@@ -1,5 +1,4 @@
 import React from 'react';
-import prd1 from '../../assets/sail1.webp';
 import AnimatedInView from '../../lib/AnimationCard'; // Import the generic animation component
 
 function CatagorySection() {

@@ -4,8 +4,8 @@ import Animation from '../../lib/FadeInWhenVisible'
 function AboutSection() {
     return (
         <section className="bg-[#f1f2e9] py-20 px-4 md:px-20">
-            <h2 className="text-3xl md:text-7xl font-bold uppercase  leading-tight mb-8 text-center">
-                Waves of Change: Connecting Rural India to Global Markets
+            <h2 className="text-4xl md:text-7xl font-bold uppercase  leading-tight mb-8 text-center">
+                Connecting Rural India to Global Markets
             </h2>
             <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
                 {/* Left Text Section */}

@@ -1,5 +1,6 @@
 import React from 'react'
 import Breadcrumbs from './Breadcrumbs'
+import bookbanner from '../../../assets/bookbanner.jpg'
 function HeroSection() {
     return (
         <div>
@@ -7,7 +8,7 @@ function HeroSection() {
                 className="hero h-[23rem] bg-cover"
                 style={{
                     backgroundImage:
-                        "url(https://media.ascensionpress.com/wp-content/uploads/2019/10/alfons-morales-YLSwjSy7stw-unsplash.jpg)",
+                        `url(${bookbanner})`,
                 }}
             >
                 <div className="hero-overlay"></div>

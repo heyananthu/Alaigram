@@ -1,7 +1,7 @@
 import React from 'react'
 import Herosub from './Herosub'
 import AnimationCard from '../../lib/AnimationCard'
-import banner from '../../assets/banner.png'
+import banner from '../../assets/banner.JPEG'
 function Herosection() {
     return (
         <div>
@@ -17,7 +17,7 @@ function Herosection() {
                     <AnimationCard>
                         <div className="max-w-2xl">
                             <h1 className="mb-5 text-5xl font-extrabold leading-tight">
-                                Waves of Change 🌊
+                                Waves of Change 
                             </h1>
                             <p className="mb-6 text-lg">
                                 Empowering rural India by connecting artisans to the global market through sustainable and ethical eCommerce solutions.
