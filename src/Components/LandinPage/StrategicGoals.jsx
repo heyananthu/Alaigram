@@ -46,7 +46,7 @@ function StrategicGoals() {
 
             <Animation>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {goals.map((goal, index) => (
                         <div key={index} className="bg-gray-50 shadow hover:shadow-xl rounded-xl p-6 transition">
                             <div className={`w-14 h-14 rounded-full flex items-center justify-center mb-4 ${goal.bg}`}>
