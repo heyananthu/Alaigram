@@ -24,7 +24,7 @@ function Newarraival() {
             <div className="max-w-screen-xl mx-auto px-4 lg:px-8">
                 <AnimationCard>
                     <h1 className="text-2xl md:text-5xl font-bold text-center text-blue-900 mb-10">
-                        ✨ New Arrivals by Category ✨
+                        ✨ New Arrivals ✨
                     </h1>
                 </AnimationCard>
 
