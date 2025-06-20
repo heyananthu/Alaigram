@@ -23,16 +23,12 @@ function Landingpage() {
             <About />
             {/* <MissionSection /> */}
             {/* <CatagorySection /> */}
-
             {/* <BusinessActivities /> */}
-            <ProductCategories />
-            <ValuePropositions />
-
             <Newarraival />
-
+            <ValuePropositions />
+            <ProductCategories />
             <StrategicGoals />
             <CallToAction />
-
             {/* <Contact /> */}
             <Footer />
         </div>

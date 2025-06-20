@@ -23,7 +23,7 @@ function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="w-full px-4 py-3 bg-white border-b-2 relative z-50">
+        <div className="w-full px-4 py-3 bg-white  relative z-50 shadow-md">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between h-16">
 
                 {/* Logo on the left */}
@@ -42,6 +42,8 @@ function Navbar() {
                                 <NavItem label="Home" to="/" onClick={() => setIsOpen(false)} />
                                 <NavItem label="About" to="/aboutus" onClick={() => setIsOpen(false)} />
                                 <NavItem label="Contact" to="/contactus" onClick={() => setIsOpen(false)} />
+                                <NavItem label="Blog" to="/blogs" onClick={() => setIsOpen(false)} />
+
                             </ul>
                         </nav>
                     </Animationview>
@@ -112,6 +114,13 @@ function Navbar() {
                                     transition={{ delay: 0.3 }}
                                 >
                                     <NavItem label="Contact" to="/contactus" onClick={() => setIsOpen(false)} />
+                                </motion.li>
+                                <motion.li
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.3 }}
+                                >
+                                    <NavItem label="Contact" to="/blogs" onClick={() => setIsOpen(false)} />
                                 </motion.li>
                             </ul>
 

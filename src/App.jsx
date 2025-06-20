@@ -5,6 +5,8 @@ import AboutPage from './pages/AboutPage'
 import Contactus from './pages/Contactus'
 import WhatsappChat from './pages/WhatsappChat'
 import Main from './Components/Products/Books/Main'
+import Blog from './pages/blog'
+import FirstBlog from './Components/Blogs/firstBlog'
 function App() {
   return (
     <BrowserRouter>
@@ -14,6 +16,8 @@ function App() {
           <Route path='/aboutus' element={<AboutPage />} />
           <Route path='/contactus' element={<Contactus />} />
           <Route path='/books' element={<Main />} />
+          <Route path='/blogs' element={<Blog />} />
+          <Route path='/wave-of-change' element={<FirstBlog />} />
         </Routes>
         <WhatsappChat />
       </div>
