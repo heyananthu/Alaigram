@@ -107,7 +107,7 @@ function FirstBlog() {
                 <div className="mt-12 text-center">
                     <button
                         className="inline-flex items-center px-6 py-2 bg-amber-600 text-white text-lg font-medium rounded-md hover:bg-amber-700 transition-colors duration-200 transform hover:scale-105"
-                        onClick={() => navigate('/blog')}
+                        onClick={() => navigate('/blogs')}
                     >
                         Back to Blog
                     </button>
