@@ -5,7 +5,7 @@ import AboutPage from './pages/AboutPage'
 import Contactus from './pages/Contactus'
 import WhatsappChat from './pages/WhatsappChat'
 import Main from './Components/Products/Books/Main'
-import Blog from './pages/blog'
+import Blog from './pages/Blog'
 import FirstBlog from './Components/Blogs/firstBlog'
 function App() {
   return (
