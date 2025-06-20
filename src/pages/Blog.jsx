@@ -9,10 +9,9 @@ import AnimationCard from '../lib/AnimationCard';
 function Blog() {
     const navigate = useNavigate();
     useEffect(() => {
-        window.scrollTo(0, 0); // Scrolls to top when the component mounts
+        window.scrollTo(0, 0);
     }, []);
 
-    // Sample blog posts data (you can replace with dynamic data from an API)
     const blogPosts = [
         {
             id: 1,

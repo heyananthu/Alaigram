@@ -120,7 +120,7 @@ function Navbar() {
                                     animate={{ opacity: 1, y: 0 }}
                                     transition={{ delay: 0.3 }}
                                 >
-                                    <NavItem label="Contact" to="/blogs" onClick={() => setIsOpen(false)} />
+                                    <NavItem label="Blog" to="/blogs" onClick={() => setIsOpen(false)} />
                                 </motion.li>
                             </ul>
 
