@@ -36,10 +36,9 @@ function FirstBlog() {
                     <div className="text-center px-4 animate-fade-in">
                         <AnimationCard>
                             <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight drop-shadow-lg">
-                                Welcome to Alaigram
-                            </h1>
+                                Our Blog                            </h1>
                             <p className="text-lg md:text-2xl text-amber-100 mt-4 max-w-2xl mx-auto">
-                                Waves of Change Begin Here
+                                Explore. Inspire. Empower.
                             </p></AnimationCard>
                     </div>
                 </div>
@@ -50,7 +49,9 @@ function FirstBlog() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {/* Main Article */}
                     <article className="lg:col-span-2 prose prose-lg prose-gray mx-auto">
-                        <p className="text-lg text-gray-800 leading-relaxed">
+                        <h2 className="text-3xl font-bold text-gray-900 mt-10 mb-4 border-l-4 border-amber-600 pl-4">Welcome to Alaigram: Waves of Change Begin Here</h2>
+
+                        <p className="text-lg text-gray-800 leading-relaxed mt-5">
                             As the sun rises over the horizon, gentle waves lap against the shores of our dreams, carrying with them the whispers of creativity and craftsmanship from rural villages. Welcome to <span className="font-semibold text-amber-700">Alaigram</span>—a place where tradition meets innovation, where hands that craft stories are celebrated, and where every wave signifies a step toward empowerment and sustainability. Here, we invite you to journey with us through tales woven by artisans who transform their rich heritage into beautiful creations that resonate far beyond their villages.
                         </p>
 
