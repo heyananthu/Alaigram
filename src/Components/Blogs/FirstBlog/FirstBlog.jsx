@@ -1,36 +1,25 @@
 import React, { useEffect } from 'react'
-import Navbar from '../LandinPage/Navbar';
-import Footer from '../LandinPage/Footer';
-import banner from '../../assets/banner.jpeg';
+import Navbar from '../../../Components/LandinPage/Navbar';
+import Footer from '../../../Components/LandinPage/Footer';
+import banner from '../../../assets/banner.jpeg'
 import { useNavigate } from 'react-router-dom';
-import AnimationCard from '../../lib/AnimationCard';
+import AnimationCard from '../../../lib/AnimationCard';
+import Sidebar from '../Sidebar';
 function FirstBlog() {
     const navigate = useNavigate();
     useEffect(() => {
         window.scrollTo(0, 0); // Scrolls to top when the component mounts
     }, []);
 
-    // const relatedPosts = [
-    //     {
-    //         id: 1,
-    //         title: 'Crafting Tradition with Passion',
-    //         slug: '/crafting-tradition',
-    //     },
-    //     {
-    //         id: 2,
-    //         title: 'The Soul of Handmade Art',
-    //         slug: '/soul-of-handmade',
-    //     },
-    // ];
     return (
-        <div className="bg-amber-50 min-h-screen">
+        <div className="">
             <Navbar />
             {/* Hero Section */}
             <div className="relative w-full h-[28rem] md:h-[26rem]">
                 <img
                     src={banner}
                     alt="Waves of Change"
-                    className="w-full h-full object-cover transition-opacity duration-500"
+                    className="w-full h-full object-cover transition-opacity duration-500 "
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent flex items-center justify-center">
                     <div className="text-center px-4 animate-fade-in">
@@ -75,33 +64,7 @@ function FirstBlog() {
                             Join us on this transformative journey! Subscribe to our blog and be part of the movement as we ride these waves of change together—celebrating tradition while paving new paths toward sustainability and empowerment. Your support can help elevate voices from rural India into a global conversation about creativity, culture, and conscious living. <span className="font-semibold text-amber-700">Let’s create waves together!</span>
                         </p>
                     </article>
-
-                    {/* Sidebar */}
-                    {/* <aside className="lg:col-span-1">
-                        <div className="sticky top-8 bg-white rounded-lg shadow-sm p-6">
-                            <h3 className="text-xl font-semibold text-gray-900 mb-4">Related Stories</h3>
-                            <ul className="space-y-4">
-                                {relatedPosts.map((post) => (
-                                    <li key={post.id}>
-                                        <button
-                                            className="text-left text-amber-700 hover:text-amber-800 font-medium transition-colors duration-200"
-                                            onClick={() => navigate(post.slug)}
-                                        >
-                                            {post.title}
-                                        </button>
-                                    </li>
-                                ))}
-                            </ul>
-                            <div className="mt-6">
-                                <button
-                                    className="w-full px-4 py-2 bg-amber-600 text-white text-sm font-medium rounded-md hover:bg-amber-700 transition-colors duration-200"
-                                    onClick={() => navigate('/subscribe')}
-                                >
-                                    Subscribe to Our Blog
-                                </button>
-                            </div>
-                        </div>
-                    </aside> */}
+                    {/* <Sidebar /> */}
                 </div>
 
                 {/* CTA Section */}

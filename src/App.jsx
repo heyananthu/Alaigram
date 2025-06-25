@@ -6,7 +6,8 @@ import Contactus from './pages/Contactus'
 import WhatsappChat from './pages/WhatsappChat'
 import Main from './Components/Products/Books/Main'
 import Blog from './pages/Blog'
-import FirstBlog from './Components/Blogs/FirstBlog'
+import FirstBlog from './Components/Blogs/FirstBlog/FirstBlog'
+import SecondBlog from './Components/Blogs/SecondBlog/SecondBlog'
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
           <Route path='/books' element={<Main />} />
           <Route path='/blogs' element={<Blog />} />
           <Route path='/wave-of-change' element={<FirstBlog />} />
+          <Route path='/heart-behind-alaigram' element={<SecondBlog />} />
         </Routes>
         <WhatsappChat />
       </div>

@@ -5,7 +5,7 @@ import banner from '../assets/banner.jpeg';
 import Herosection from '../Components/Blogs/Herosection';
 import { useNavigate } from 'react-router-dom';
 import AnimationCard from '../lib/AnimationCard';
-
+import blog2banner from '../assets/blog2-banner.png'
 function Blog() {
     const navigate = useNavigate();
     useEffect(() => {
@@ -20,20 +20,13 @@ function Blog() {
             image: banner,
             slug: '/wave-of-change',
         },
-        // {
-        //     id: 2,
-        //     title: 'Crafting Tradition with Passion',
-        //     excerpt: 'Discover the artistry behind our traditional products, where every piece tells a story of heritage and dedication.',
-        //     image: banner,
-        //     slug: '/crafting-tradition',
-        // },
-        // {
-        //     id: 3,
-        //     title: 'The Soul of Handmade Art',
-        //     excerpt: 'Explore how our artisans breathe life into every creation, preserving culture through timeless techniques.',
-        //     image: banner,
-        //     slug: '/soul-of-handmade',
-        // },
+        {
+            id: 2,
+            title: 'The Heart Behind Alaigram',
+            excerpt: 'At the very core of Alaigram lies a story woven with threads of tradition, culture, and an unwavering commitment to uplift communities.',
+            image: blog2banner,
+            slug: '/heart-behind-alaigram',
+        },
     ];
 
     return (

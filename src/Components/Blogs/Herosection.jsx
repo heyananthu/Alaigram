@@ -6,7 +6,7 @@ function Herosection() {
     return (
         <div>
             <div
-                className="hero h-[15rem] bg-cover"
+                className="hero h-[10rem] bg-cover"
                 style={{
                     backgroundImage:
                         `url(${banner})`,
@@ -17,15 +17,8 @@ function Herosection() {
                     <div className="max-w-md">
                         <AnimationCard>
 
-                        <h1 className="mb-5 text-3xl font-bold lg:text-nowrap">Welcome to Our Blog</h1>
+                            <h1 className="mb-5 text-3xl font-bold lg:text-nowrap">Welcome to Our Blog</h1>
                         </AnimationCard>
-                        {/* <p className="mb-5 text-2xl md:text-nowrap">
-                            Welcome to Alaigram United Private Limited
-                        </p>
-                        <p className="mb-5">
-                            Waves of Change : Connecting Rural India to the World
-                        </p> */}
-                        {/* <button className="btn btn-primary">Get Started</button> */}
                     </div>
                 </div>
             </div>
