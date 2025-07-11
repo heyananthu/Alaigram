@@ -6,6 +6,7 @@ import Herosection from '../Components/Blogs/Herosection';
 import { useNavigate } from 'react-router-dom';
 import AnimationCard from '../lib/AnimationCard';
 import blog2banner from '../assets/blog2-banner.png'
+import blog3 from '../assets/blog3.jpg'; 
 function Blog() {
     const navigate = useNavigate();
     useEffect(() => {
@@ -27,6 +28,13 @@ function Blog() {
             image: blog2banner,
             slug: '/heart-behind-alaigram',
         },
+        {
+            id: 3,
+            title: 'Explore Our World',
+            excerpt: 'At Alaigram, we believe in more than products — we believe in preserving a way of life. A life where every object has a story, every ingredient has a history, and every choice honors both the wisdom of our past and the needs of our future.',
+            image: blog3, // Replace with actual image URL
+            slug: '/explore-our-world',
+        }
     ];
 
     return (
