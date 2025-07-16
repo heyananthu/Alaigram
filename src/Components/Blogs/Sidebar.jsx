@@ -5,14 +5,19 @@ function Sidebar() {
     const relatedPosts = [
         {
             id: 1,
-            title: 'From Passion to Purpose: The Heart Behind Alaigram',
-            slug: '/crafting-tradition',
+            title: 'Waves of Change Begin Here',
+            slug: '/wave-of-change',
         },
-        // {
-        //     id: 2,
-        //     title: 'The Soul of Handmade Art',
-        //     slug: '/soul-of-handmade',
-        // },
+        {
+            id: 2,
+            title: 'The Heart Behind Alaigram',
+            slug: '/heart-behind-alaigram',
+        },
+        {
+            id: 3,
+            title: 'Explore Our World',
+            slug: '/explore-our-world',
+        },
     ];
     return (
         <div>

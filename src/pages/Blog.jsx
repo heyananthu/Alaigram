@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import AnimationCard from '../lib/AnimationCard';
 import blog2banner from '../assets/blog2-banner.png'
 import blog3 from '../assets/blog3.jpg'; 
+import blog4 from '../assets/blog4-banner.jpg'; // Replace with actual image URL
 function Blog() {
     const navigate = useNavigate();
     useEffect(() => {
@@ -34,6 +35,13 @@ function Blog() {
             excerpt: 'At Alaigram, we believe in more than products — we believe in preserving a way of life. A life where every object has a story, every ingredient has a history, and every choice honors both the wisdom of our past and the needs of our future.',
             image: blog3, // Replace with actual image URL
             slug: '/explore-our-world',
+        },
+        {
+            id: 4,
+            title: 'For the Love of Reading',
+            excerpt: 'Discover Our Malayalam Books',
+            image: blog4, // Replace with actual image URL
+            slug: '/for-the-love-of-reading',
         }
     ];
 

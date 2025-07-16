@@ -9,6 +9,7 @@ import Blog from './pages/Blog'
 import FirstBlog from './Components/Blogs/FirstBlog/FirstBlog'
 import SecondBlog from './Components/Blogs/SecondBlog/SecondBlog'
 import ThirdBlog from './Components/Blogs/ThirdBlog/ThirdBlog'
+import FourthBlog from './Components/Blogs/FourthBlog/FourthBlog'
 function App() {
   return (
     <BrowserRouter>
@@ -22,6 +23,7 @@ function App() {
           <Route path='/wave-of-change' element={<FirstBlog />} />
           <Route path='/heart-behind-alaigram' element={<SecondBlog />} />
           <Route path='/explore-our-world' element={<ThirdBlog />} />
+          <Route path='/for-the-love-of-reading' element={<FourthBlog />} />
         </Routes>
         <WhatsappChat />
       </div>
