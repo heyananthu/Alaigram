@@ -40,6 +40,7 @@ function Navbar() {
                         <nav className="hidden md:flex">
                             <ul className="flex gap-6 items-center">
                                 <NavItem label="Home" to="/" onClick={() => setIsOpen(false)} />
+                                <NavItem label="Shop" to="/books" onClick={() => setIsOpen(false)} />
                                 <NavItem label="About" to="/aboutus" onClick={() => setIsOpen(false)} />
                                 <NavItem label="Contact" to="/contactus" onClick={() => setIsOpen(false)} />
                                 <NavItem label="Blog" to="/blogs" onClick={() => setIsOpen(false)} />
@@ -100,6 +101,13 @@ function Navbar() {
                                     transition={{ delay: 0.1 }}
                                 >
                                     <NavItem label="Home" to="/" onClick={() => setIsOpen(false)} />
+                                </motion.li>
+                                <motion.li
+                                    initial={{ opacity: 0, y: 10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ delay: 0.2 }}
+                                >
+                                    <NavItem label="Shop" to="/books" onClick={() => setIsOpen(false)} />
                                 </motion.li>
                                 <motion.li
                                     initial={{ opacity: 0, y: 10 }}

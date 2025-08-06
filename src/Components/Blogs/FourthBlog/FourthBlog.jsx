@@ -46,7 +46,7 @@ function FourthBlog() {
                             In the gentle hush of early morning or the quiet pause between daily routines, there’s a certain kind of magic that only a good book can bring. At Alaigram, we cherish that magic — especially when it speaks to us in the language of our roots. Our curated Malayalam collection is more than a catalogue; it’s a living tribute to the heartbeat of Kerala — to its stories, its wisdom, and its evolving voice.
                         </p>
                         <p className="text-lg text-gray-800 leading-relaxed mt-5">
-                            We believe in reading with pride, and in Malayalam, pride finds its poetry. Whether you're searching for tales that echo childhood wonder, spark adult contemplation, or rekindle a connection with your mother tongue, we’ve gathered books that resonate across generations.
+                            We believe in reading with pride, and in Malayalam, pride finds its poetry. Whether you're searching for tales that echo childhood wonder, spark adult contemplation, or rekindle a connection with your mother tongue, we’ve gathered <span className='font-semibold text-blue-700 cursor-pointer' onClick={() => { navigate('/books') }}>books</span> that resonate across generations.
                         </p>
                         <p className="text-lg text-gray-800 leading-relaxed mt-5">
                             Let us take you through a few beloved titles — each one carrying the scent of paper, memory, and meaning.
