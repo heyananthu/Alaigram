@@ -39,6 +39,14 @@ function ThirdBlog() {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <article className="lg:col-span-2 prose prose-lg prose-gray mx-auto">
+                        <div className="mb-6">
+                            <p className="text-gray-500 text-sm flex items-center mb-4">
+                                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                                Published on July 17, 2025
+                            </p>
+                        </div>
                         <h2 className="text-3xl font-bold text-gray-900 mt-10 mb-4 border-l-4 border-amber-600 pl-4">
                             Explore Our World: The Alaigram Product Categories
                         </h2>

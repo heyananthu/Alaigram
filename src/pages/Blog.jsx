@@ -22,6 +22,7 @@ function Blog() {
             excerpt: 'As the sun rises over the horizon, gentle waves lap against the shores of our dreams, carrying with them the whispers of creativity and craftsmanship from rural villages.',
             image: banner,
             slug: '/wave-of-change',
+            publishDate: 'June 04, 2025',
         },
         {
             id: 2,
@@ -29,13 +30,15 @@ function Blog() {
             excerpt: 'At the very core of Alaigram lies a story woven with threads of tradition, culture, and an unwavering commitment to uplift communities.',
             image: blog2banner,
             slug: '/heart-behind-alaigram',
+            publishDate: 'June 18, 2025',
         },
         {
             id: 3,
             title: 'Explore Our World',
-            excerpt: 'At Alaigram, we believe in more than products — we believe in preserving a way of life. A life where every object has a story, every ingredient has a history, and every choice honors both the wisdom of our past and the needs of our future.',
+            excerpt: 'At Alaigram, we believe in more than products — we believe in preserving a way of life. A life where every object has a story, every ingredient has a history, and every choice honors both the wisdom of our...',
             image: blog3,
             slug: '/explore-our-world',
+            publishDate: 'July 17, 2025',
         },
         {
             id: 4,
@@ -43,6 +46,7 @@ function Blog() {
             excerpt: 'In the gentle hush of early morning or the quiet pause between daily routines, there’s a certain kind of magic that only a good book can bring. At Alaigram, we...',
             image: blog4,
             slug: '/for-the-love-of-reading',
+            publishDate: 'July 30, 2025',
         },
         {
             id: 5,
@@ -50,6 +54,7 @@ function Blog() {
             excerpt: 'In today’s interconnected world, literature stands as one of the most potent vessels for cultural exchange and personal transformation',
             image: blog5,
             slug: '/global-bestsellers-in-malayalam',
+            publishDate: 'August 6, 2025',
         }
     ];
 
@@ -77,9 +82,15 @@ function Blog() {
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                                 </div>
                                 <div className="p-6 flex flex-col flex-grow">
-                                    <h2 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-indigo-600 transition-colors line-clamp-2">
+                                    <h2 className="text-xl font-semibold text-gray-800 mb-2 group-hover:text-indigo-600 transition-colors line-clamp-2">
                                         {post.title}
                                     </h2>
+                                    <p className="text-gray-500 text-xs mb-3 flex items-center">
+                                        <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                        </svg>
+                                        {post.publishDate}
+                                    </p>
                                     <p className="text-gray-600 text-sm line-clamp-3 mb-6 flex-grow">
                                         {post.excerpt}
                                     </p>
