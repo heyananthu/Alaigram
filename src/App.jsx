@@ -11,6 +11,7 @@ import SecondBlog from './Components/Blogs/SecondBlog/SecondBlog'
 import ThirdBlog from './Components/Blogs/ThirdBlog/ThirdBlog'
 import FourthBlog from './Components/Blogs/FourthBlog/FourthBlog'
 import FifthBlog from './Components/Blogs/FifthBlog/FifthBlog'
+import SixthBlog from './Components/Blogs/SixthBlog/SixthBlog'
 function App() {
   return (
     <BrowserRouter>
@@ -26,6 +27,7 @@ function App() {
           <Route path='/explore-our-world' element={<ThirdBlog />} />
           <Route path='/for-the-love-of-reading' element={<FourthBlog />} />
           <Route path='/global-bestsellers-in-malayalam' element={<FifthBlog />} />
+          <Route path='/malayalam-literature-guide' element={<SixthBlog />} />
         </Routes>
         <WhatsappChat />
       </div>

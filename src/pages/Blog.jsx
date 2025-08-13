@@ -9,6 +9,7 @@ import blog2banner from '../assets/blog2-banner.png'
 import blog3 from '../assets/blog3.jpg';
 import blog4 from '../assets/blog4-banner.jpg';
 import blog5 from '../assets/blog5.jpg';
+import blog6 from '../assets/blog6.jpg'
 function Blog() {
     const navigate = useNavigate();
     useEffect(() => {
@@ -55,6 +56,14 @@ function Blog() {
             image: blog5,
             slug: '/global-bestsellers-in-malayalam',
             publishDate: 'August 6, 2025',
+        },
+        {
+            id: 6,
+            title: 'A Beginner’s Guide to Malayalam Literature: Where to Start and What to Read',
+            excerpt: 'Stepping into Malayalam literature is like opening a window to Kerala’s soul. Each book carries the rhythm of monsoon rains, the scent of coconut groves, and the warmth of familiar conversations over evening tea',
+            image: blog6,
+            slug: '/malayalam-literature-guide',
+            publishDate: 'August 13, 2025',
         }
     ];
 
