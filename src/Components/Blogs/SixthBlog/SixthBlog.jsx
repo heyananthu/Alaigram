@@ -3,7 +3,7 @@ import Navbar from '../../../Components/LandinPage/Navbar'
 import Footer from '../../../Components/LandinPage/Footer'
 import AnimationCard from '../../../lib/AnimationCard'
 import { useNavigate } from 'react-router-dom'
-import banner from '../../../assets/blog6.jpg'
+import banner from '../../../assets/blog6-new.jpg'
 
 function SixthBlog() {
     const navigate = useNavigate()
@@ -23,14 +23,14 @@ function SixthBlog() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-transparent flex items-center justify-center">
                     <div className="text-center px-4 animate-fade-in">
-                        <AnimationCard>
+                        {/* <AnimationCard>
                             <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight drop-shadow-lg">
                                 A Beginner's Guide to Malayalam Literature
                             </h1>
                             <p className="text-lg md:text-2xl text-amber-100 mt-4 max-w-2xl mx-auto">
                                 Your First Steps into Kerala's Literary Soul
                             </p>
-                        </AnimationCard>
+                        </AnimationCard> */}
                     </div>
                 </div>
             </div>

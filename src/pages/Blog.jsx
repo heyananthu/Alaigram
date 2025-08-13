@@ -9,7 +9,7 @@ import blog2banner from '../assets/blog2-banner.png'
 import blog3 from '../assets/blog3.jpg';
 import blog4 from '../assets/blog4-banner.jpg';
 import blog5 from '../assets/blog5.jpg';
-import blog6 from '../assets/blog6.jpg'
+import blog6 from '../assets/blog6-new.jpg'
 function Blog() {
     const navigate = useNavigate();
     useEffect(() => {
