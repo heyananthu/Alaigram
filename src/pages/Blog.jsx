@@ -10,6 +10,7 @@ import blog3 from '../assets/blog3.jpg';
 import blog4 from '../assets/blog4-banner.jpg';
 import blog5 from '../assets/blog5.jpg';
 import blog6 from '../assets/blog6-new.jpg'
+import blog7 from '../assets/blog7.jpg'
 function Blog() {
     const navigate = useNavigate();
     useEffect(() => {
@@ -64,6 +65,14 @@ function Blog() {
             image: blog6,
             slug: '/malayalam-literature-guide',
             publishDate: 'August 13, 2025',
+        },
+        {
+            id: 7,
+            title: '“Kambilikandathe Kalbharanikal” from Alaigram’s Collection.',
+            excerpt: 'In a world often overshadowed by adversity, Kambilikandathe Kalbharanikal emerges as a beacon of resilience and hope.',
+            image: blog7,
+            slug: '/kambilikandathe-kalbharanikal-book-review',
+            publishDate: 'August 20, 2025',
         }
     ];
 

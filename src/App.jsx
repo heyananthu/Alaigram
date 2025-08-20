@@ -12,6 +12,7 @@ import ThirdBlog from './Components/Blogs/ThirdBlog/ThirdBlog'
 import FourthBlog from './Components/Blogs/FourthBlog/FourthBlog'
 import FifthBlog from './Components/Blogs/FifthBlog/FifthBlog'
 import SixthBlog from './Components/Blogs/SixthBlog/SixthBlog'
+import SeventhBlog from './Components/Blogs/SeventhBlog/SeventhBlog'
 function App() {
   return (
     <BrowserRouter>
@@ -28,6 +29,7 @@ function App() {
           <Route path='/for-the-love-of-reading' element={<FourthBlog />} />
           <Route path='/global-bestsellers-in-malayalam' element={<FifthBlog />} />
           <Route path='/malayalam-literature-guide' element={<SixthBlog />} />
+          <Route path='/kambilikandathe-kalbharanikal-book-review' element={<SeventhBlog />} />
         </Routes>
         <WhatsappChat />
       </div>
